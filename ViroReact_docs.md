@@ -1,6 +1,7 @@
+
 ***NOTE: This document is incomplete. The comprehensive docs can be found*** [here](https://viro-community.readme.io/docs/overview)
 
-—--
+---
 
 # Overview
 
@@ -46,7 +47,7 @@ The AR system provides additional information through these features:
 
 With these features, developers can create realistic AR experiences with proper lighting, environmental interaction, otherworldly portals, and more.
 
-—--
+---
 
 # Tracking and Anchors
 
@@ -116,7 +117,7 @@ Example:
 </ViroARPlane>
 ```
 
-—--
+---
 
 # Interaction
 
@@ -202,7 +203,7 @@ Each dragging method serves different interaction needs:
 - `FixedToWorld`: Real-world surface interaction
 - `FixedToPlane`: Constrained plane movement
 
-—--
+---
 
 # Image Recognition
 
@@ -328,7 +329,7 @@ For optimal image target recognition:
    - Ensure proper lighting conditions
    - Consider physical size of target images
 
-—--
+---
 
 ==============
 API REFERENCE
@@ -496,7 +497,7 @@ Directly updates native component properties without re-rendering. See React Nat
 componentRef.setNativeProps({ position: [0, 0, -1] });
 ```
 
-—--
+---
 
 # ViroNode
 
@@ -675,7 +676,7 @@ interface Transform {
 }
 ```
 
-—--
+---
 
 # ViroARScene
 
@@ -864,7 +865,7 @@ Available effects:
 - crosshatch: Line pattern
 - pixelated: Pixelization
 
-—--
+---
 
 # ViroARSceneNavigator
 ViroARSceneNavigator is the entry point for AR applications with Viro.
@@ -1047,7 +1048,7 @@ this.props.arSceneNavigator.unproject(unprojectPoint).then((returnDict) => {
 });
 ```
 
-—--
+---
 
 # ViroARPlane
 
@@ -1263,7 +1264,7 @@ A wrapper function around the native component's setNativeProps which allow user
 componentRef.setNativeProps({ position: [0, 0, -1] });
 ```
 
-—--
+---
 
 # ViroARPlaneSelector
 
@@ -1446,7 +1447,7 @@ This is the object given to the developer through the `onAnchorFound` and `onAnc
 
 This function resets the `ARPlaneSelector` back to the "selection" state which presents the end user with all planes that have been found by the AR system (up to `maxPlanes` number of planes).
 
-—--
+---
 
 # ViroImage
 
@@ -1999,7 +2000,7 @@ componentRef.setNativeProps({ position: [0, 0, -1] });
 
 The given source will be purged from the memory and local storage cache of the device. On Android, Viro, like React-Native, uses the Fresco image library to load and cache images and this is required if the given source reference (uri, etc) is the same, but the image data changes. **Android Only**
 
-—--
+---
 
 # ViroARImageMarker
 
@@ -2161,7 +2162,7 @@ A wrapper function around the native component's setNativeProps which allow user
 componentRef.setNativeProps({ position: [0, 0, -1] });
 ```
 
-—--
+---
 
 # ViroARObjectMarker
 
